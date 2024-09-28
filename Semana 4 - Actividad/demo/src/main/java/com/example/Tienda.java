@@ -19,6 +19,7 @@ public class Tienda {
     public Producto buscarProductoPorNombre(String nombre) {
         int index = this.productos.indexOf(nombre);
         if (index >= 0) {
+            System.out.println("Producto Encontrado");
             return this.productos.get(index);
         } else {
             return null;
@@ -33,10 +34,10 @@ public class Tienda {
         return sumatoria;
     }
 
-    /*public void mostrarProductosConStockBajo(int limite) {
+    public void mostrarProductosConStockBajo(int limite) {
         int stockProductosBajo = 0;
         if (stockProductosBajo >= 5) {
-            Producto = 
+            System.out.println("Productos con Stck bajo: " + limite); 
         }
-    }*/
+    }
 }
